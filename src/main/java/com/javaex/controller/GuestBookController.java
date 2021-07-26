@@ -28,7 +28,7 @@ public class GuestBookController {
 		
 		model.addAttribute("gList",guestList);
 		
-		return "/WEB-INF/views/list.jsp";
+		return "list";
 	}
 	
 	//등록
@@ -48,7 +48,7 @@ public class GuestBookController {
 		
 		model.addAttribute("guestBookVo",guestBookVo);
 		
-		return "/WEB-INF/views/deleteForm.jsp";
+		return "deleteForm";
 	}
 	
 	//삭제
